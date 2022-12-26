@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- Responsive(https://www.w3schools.com/html/html_responsive.asp) -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+body {
+  
+  font-family: 'Inter';
+  font-style: normal;
+  margin:5%
+  background-image: 
+}
+
+h1 {
+  color: black;
+  text-align: left;
+  font-size: 145%;/* 4vw να μικραίνουν τα γράμματα μαζί με την οθόνη */
+  margin: 0;
+  font-style: normal;
+}
+
+p {
+  font-size: 20px;
+  font-family: 'Inter';
+  font-size: 85%; /* 2vw να μικραίνουν τα γράμματα μαζί με την οθόνη */
+  margin: 0;
+  font-style: normal;
+}
+
+.triantapx {
+font-weight: 600;
+font-size: 28px;
+line-height: 36px;
+color: #000000;
+}
+
+.dekaoktw {
+  font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 22px;
+/* identical to box height */
+color: #000000;
+}
+
+
+.dekaeksipx {
+font-weight: 500;
+font-size: 13px;
+line-height: 21px;
+/* identical to box height */
+}
+
+.dekatessera {
+  font-family: 'Inter';
+font-style: normal;
+font-weight: 300;
+font-size: 13px;
+line-height: 17px;
+}
+
+
+.dwdeka {
+  font-weight: 200;
+font-size: 11px;
+line-height: 15px;
+}
+
+
+.stokentro {
+  text-align: center;
+}
+
+
+
+/* diastimata */
+.gaps-kenopanw {
+padding-top: 40%;
+}
+
+.gaps-kenopanw2 {
+padding-top: 0.3%;
+}
+
+
+.container-hereo {
+display: flex;
+flex-direction: column;
+border: 1px solid; 
+}
+
+.fix-subtitle {
+width: 40%;
+opacity: 65%;
+}
+
+.fix-title {
+width:50%
+}
+
+/* Form */
+.input-container {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  margin:0px;
+  padding: 0px;
+}
+
+.input-field {
+  width: 40%;
+  padding: 10px 10px 10px 0px;
+  outline: none;
+  font-family: 'Inter';
+  font-size: 80%;
+  border: 0.2px solid #000000;
+  border-radius: 0px 10px 10px 0px;
+  border-width: 1px 1px 1px 0px;
+}
+
+
+
+/*Icon Form */
+
+
+.icon {
+  padding: 17px 10px;
+  background: none;
+  color: black;
+  min-width: 50px;
+  text-align: center;
+  border: 0.2px solid #000000;
+  border-radius: 10px 0px 0px 10px;
+  border-width: 1px 0px 1px 1px;
+}
+
+
+.form-container {
+display: flex;
+font-family: 'Inter';
+font-size: 14px;
+flex-direction: column;
+align-items: flex-start;
+padding: 50px;
+gap: 36px;
+background: #FFFFFF;
+width: 30%;
+gap: 10%
+}
+
+.form-position {
+  position: absolute;
+  display: flex;
+
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 20px;
+width: 504px;
+height: 434px;
+left: 171px;
+top: 142px; text-align: left;
+}
+.diafaneia {
+  opacity: 0.65;
+}
+
+
+.comments {
+  display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0px 398px;
+gap: 37px;
+flex: none;
+order: 0;
+flex-grow: 0;
+align-items: center;
+}
+
+.proswpiko {
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0px;
+gap: 0px;
+box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.proswpiko-email {
+  display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 17px 83px;
+gap: 10px;
+background: #036562;
+flex: none;
+order: 1;
+flex-grow: 0;
+}
+
+.card-proswpiko {
+  display: flex;
+flex-direction: column;
+align-items: center;
+padding: 27px 22px 55px;
+gap: 22px;
+width: auto;
+height: auto;
+background: #FFFFFF;
+margin-bottom: 0px;
+
+}
+
+.image-card {
+  width: 242.26px;
+height: 183.94px;\z-index: 1;
+}
+
+
+.kitrino-card-proswpikou {
+  position: absolute;
+width: 287px;
+height: 95px;
+left: 0px;
+top: 0px;
+z-index: 0;
+
+background: #F7C355;
+}
+
+.all-cards-proswpikou {
+  display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 34px;
+position: absolute;
+width: 1242px;
+height: 385.94px;
+left: 99px;
+top: 1754px;
+}
+
+.white-text {
+  color:#FFFFFF;
+}
+
+.prasino-text {
+  color: #036562;
+}
+
+.centersvg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.responsive-back-images {
+  width: 100%;
+  height: auto;
+}
+
+
+#grad1 {
+  height: 780px;
+  background-image: url("/Users/evangeliachatzilygeroudi/Downloads/backgroumd image/cleaner.png");
+}
+input[type=text], select {
+  font-family: 'Inter';
+  width: 100%;
+  border-bottom: 1px solid #272727;
+  border-top: 0px;
+  border-right: 0px;
+  border-left: 0px;
+  padding: 13px 16px;
+  margin: 8px 0;
+  display: inline-block;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 20%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.div-spacer {
+  height: 2px;
+}
+
+.footer {
+  position: absolute;
+width: 1440px;
+height: 207px;
+left: 0px;
+top: 3439px;
+background: #0E3836;
+}
+
+</style>
+</head>
+<body>
+
+
+<div class="all-cards-proswpikou">
+
+  <div>
+    <div class="proswpiko">
+          <div class="card-proswpiko">
+    <img class="image-card" src="proswpo.png" alt="foto-proswpikou">
+    <div class="kitrino-card-proswpikou"></div>
+    <div>
+    <div class="dekaoktw">Μαρία Μάχη</div>
+    <div class="dwdeka prasino-text stokentro">Cleaner Services</div>
+    </div>
+    </div>
+    </div>
+    <div class="proswpiko-email white-text dekatessera">spiros@cleaner.gr</div>
+    </div>
+
+    <div>
+      <div class="proswpiko">
+            <div class="card-proswpiko">
+      <img class="image-card" src="proswpo.png" alt="foto-proswpikou">
+      <div class="kitrino-card-proswpikou"></div>
+      <div>
+      <div class="dekaoktw">Μαρία Μάχη</div>
+      <div class="dwdeka prasino-text stokentro">Cleaner Services</div>
+      </div>
+      </div>
+      </div>
+      <div class="proswpiko-email white-text dekatessera">spiros@cleaner.gr</div>
+      </div>
+
+      <div>
+        <div class="proswpiko">
+              <div class="card-proswpiko">
+        <img class="image-card" src="proswpo.png" alt="foto-proswpikou">
+        <div class="kitrino-card-proswpikou"></div>
+        <div>
+        <div class="dekaoktw">Μαρία Μάχη</div>
+        <div class="dwdeka prasino-text stokentro">Cleaner Services</div>
+        </div>
+        </div>
+        </div>
+        <div class="proswpiko-email white-text dekatessera">spiros@cleaner.gr</div>
+        </div>
+
+        <div>
+          <div class="proswpiko">
+                <div class="card-proswpiko">
+          <img class="image-card" src="proswpo.png" alt="foto-proswpikou">
+          <div class="kitrino-card-proswpikou"></div>
+          <div>
+          <div class="dekaoktw">Μαρία Μάχη</div>
+          <div class="dwdeka prasino-text stokentro">Cleaner Services</div>
+          </div>
+          </div>
+          </div>
+          <div class="proswpiko-email white-text dekatessera">spiros@cleaner.gr</div>
+          </div>
+
+</div>
+
+
+
+<div id="grad1">
+  <div class="form-position" >
+    <div class="triantapx ">Καθαρισμός στο χώρο σας </div>
+
+    <div>
+    <div class="dekaeksipx">Στείλε μας το μήνυμα σου</div>
+    <div class="dwdeka diafaneia">Lorem ipsum dolor sit amet consectetur. Venenatis risus ante tincidunt lore</div>
+    </div>
+
+    <form action="/action_page.php">
+    <label for="fname"></label>
+    <input type="text" id="fname" name="firstname" placeholder="Όνομα">
+
+    <label for="lname"></label>
+    <input type="text" id="lname" name="lastname" placeholder="Επίθετο">
+
+    <label for="lname"></label>
+    <input type="text" id="lname" name="lastname" placeholder="Μήνυμα">
+  
+    <input type="submit" value="ΣΧΕΤΙΚΑ">
+  </form>
+</div>
+</div>
+
+
+<div class="comments">
+
+  <div>
+    <div class="triantapx">Καθαρισμός στο χώρο σας</div>
+    <!--για να δουλέψει το center το έβαλα μέσα στο svg--> 
+   <div><svg class="centersvg" width="56" height="49" viewBox="0 0 56 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M11.1855 21.279C16.3679 21.279 20.5457 26.1181 20.3642 32.0075C20.2 37.373 16.3419 41.7614 11.5852 41.9905C6.32942 42.2414 1.95286 37.5119 2.00038 31.6396C2.16672 10.9062 21.8007 5.95003 25 7.17323L22.155 8.94467C20.0315 10.4213 18.1068 11.7517 16.2404 13.4354C13.9636 15.4871 12.2419 18.2161 11.1855 21.279Z" fill="#D9D9D9"/>
+      <path d="M38.9843 21.279C44.6172 21.279 49.1583 26.1181 48.9611 32.0075C48.7827 37.373 44.5891 41.7614 39.4187 41.9905C33.7059 42.2414 28.9488 37.5119 29.0004 31.6396C29.1812 10.9062 50.5226 5.95003 54 7.17323L50.9076 8.94467C48.5995 10.4213 46.5074 11.7517 44.4787 13.4354C42.0039 15.4871 40.1325 18.2161 38.9843 21.279Z" fill="#D9D9D9"/>
+      </svg></div>
+  </div>
+
+<div class="dekaeksipx stokentro">Lorem ipsum dolor sit amet consectetur. Varius eget congue viverra sagittis tincidunt aenean. Fames consequat aenean vitae pretium egestas. Enim est tincidunt eget lectus. Purus risus justo adipiscing duis rhoncus. Nunc scelerisque id eu odio viverra sed ut phasellus vulputate. Neque u</div>
+
+
+</div>
+
+
+
+<div class="footer"></div>
+
+
+</body>
+</html>
